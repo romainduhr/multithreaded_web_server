@@ -21,3 +21,5 @@ or if you want to use a port other than 80
 cd Sioux
 sudo ./sioux [-p | --port PORTNUMBER]
 ```
+
+When the CSV file is created, it will be located at the root of the project in the 'csv' directory
