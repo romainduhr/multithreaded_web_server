@@ -1,8 +1,8 @@
-# Space Invaders by Romain DUHR
+# Multithreaded web server by Romain DUHR based on the course by Xavier REDON and Thomas VANTROYS
 
 ## Project Description
 
-L'objectif du projet est de créer un serveur web multithreadé qui s'appelera sioux. Le serveur permettera aux clients de recevoir une page web. Les clients pourront réponde à un vote. Les réponses du vote seront enregistrées dans un fichier csv
+The project's objective is to create a multithreaded web server called 'sioux.' The server will allow clients to receive a web page. Clients will be able to respond to a vote, and the vote responses will be recorded in a CSV file
 
 ## Compilation linux
 
