@@ -52,12 +52,12 @@ int main(int argc, char* argv[]){
     
     sockFd = serverInit(service, 3);
     if(sockFd < 0){
-        perror("Port non utilisable\n");
+        perror("Port not available\n");
         exit(EXIT_FAILURE);
     }
-    printf("Serveur initialisé sur le port %s\n", service);
+    printf("Server initialized on port %s\n", service);
 
-    printf("Serveur à l'écoute ...\n");
+    printf("Server listening ...\n");
     printf("\n\n");
     serverLoop(sockFd, clientHandler);
 

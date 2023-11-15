@@ -115,11 +115,11 @@ void requestHandler(FILE *stream){
 
     if(strcmp(method,"GET") == 0){
 
-        printf("\tGestion de la requète GET : %s", request);
+        printf("\tHandling the Get request: %s", request);
 
         if(getArg(request, arg)){
 
-            printf("\tPage Reponse\n");
+            printf("\tResponse Page\n");
 
             // Récupération du chemin csv
             getPath(request, csvPath, "csv");
@@ -127,16 +127,16 @@ void requestHandler(FILE *stream){
             // ajout dans le csv
             if(appendToCsv(csvPath, arg) < 0){
 
-                printf("\tImpossible d'ouvrir le fichier csv\n");
+                printf("\tUnable to open the CSV file\n");
 
             }else{
 
-                printf("\tReponse enregistrer dans %s\n", csvPath);
+                printf("\tResponse saved in %s\n", csvPath);
 
             }
         }else{
 
-            printf("\tPage vote\n");
+            printf("\tVoting Page\n");
 
         }
 
@@ -148,16 +148,16 @@ void requestHandler(FILE *stream){
         // Envoie de l'html
         if(sendHtml(stream, htmlPath) < 0){
 
-            printf("\tImpossible d'ouvrir le fichier %s\n", htmlPath);
+            printf("\tUnable to open the file %s\n", htmlPath);
 
         }else{
 
-            printf("\t%s bien envoyé\n", htmlPath);
+            printf("\t%s Well sent\n", htmlPath);
 
         }
     }else{
 
-        printf("Méthode non reconnue pour la requète %s\n", request);
+        printf("Unrecognized method for the request %s\n", request);
 
     }
 }
