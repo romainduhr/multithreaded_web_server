@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>VOTE !!!</title>
+  
+  <style>
+  
+  img{
+    height: 250px;
+  }
+  
+  </style>
+</head>
+<body>
+  <p>Votez pour la photo que vous trouvez la plus belle :</p>
+
+
+  <form action="vote-reponse.html" method="get">
+
+  <P>
+
+  <b>Prénom :</b> <INPUT type="text" name="prenom">
+  <b>Nom :</b> <INPUT type="text" name="nom">
+
+  <P><b>Sexe :</b>
+
+  <INPUT type="radio" name="sexe" value="H" checked> Homme
+  <INPUT type="radio" name="sexe" value="F"> Femme
+
+  <P><b>Choix de la photo la plus belle :</b>
+
+  <br>
+  <INPUT type="radio" name="reponse" value=1>
+  <p>Photo 1 :</p>
+  <img src="https://blog.jez.io/assets/img/vim-as-an-ide/shot-03_1.png" />
+  <br>
+  <INPUT type="radio" name="reponse" value=2>
+  <p>Photo 2 :</p>
+  <img src="https://kate-editor.org/images/kate-multicursor.gif" />
+  <br>
+  <INPUT type="radio" name="reponse" value=3>
+  <p>Photo 3 :</p>
+  <img src="https://code.visualstudio.com/opengraphimg/opengraph-home.png" />
+  <br>
+  <INPUT type="radio" name="reponse" value=4>
+  <p>Photo 4 :</p>
+  <img src="https://thonny.org/img/screenshot.png" />
+
+  <P><INPUT type="submit" value="Envoyer"> <INPUT type="reset" value="Rétablir">
+
+  </FORM>
+  </body>
+</html>
